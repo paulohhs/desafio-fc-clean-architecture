@@ -27,7 +27,6 @@ describe("Integration test create product use case", () => {
         const productCreateUseCase = new CreateProductUseCase(productRepository);
 
         const input = {
-            type: "a",
             name: "Product Test",
             price: 10,
         };
@@ -46,7 +45,6 @@ describe("Integration test create product use case", () => {
         const productCreateUseCase = new CreateProductUseCase(productRepository);
 
         const input = {
-            type: "a",
             name: "",
             price: 10,
         };
@@ -59,7 +57,6 @@ describe("Integration test create product use case", () => {
         const productCreateUseCase = new CreateProductUseCase(productRepository);
 
         const input = {
-            type: "a",
             name: "Product Test",
             price: -10,
         };
