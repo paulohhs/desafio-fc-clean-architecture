@@ -55,5 +55,20 @@ describe("E2E test for product", () => {
         const product2 = listResponse.body.products[1];
         expect(product2.name).toBe("Product Test 2");
         expect(product2.price).toBe(99.99);
+
+        expect(listResponse.body).toMatchObject({
+            products: [
+                {
+                    id: expect.any(String),
+                    name: "Product Teste 1",
+                    price: 29.99,
+                },
+                {
+                    id: expect.any(String),
+                    name: "Product Test 2",
+                    price: 99.99,
+                }
+            ]
+        })
     });
 });
