@@ -7,3 +7,6 @@
 
 ### Executar testes
 `npm test`
+
+### Executar API
+`npm run dev`
